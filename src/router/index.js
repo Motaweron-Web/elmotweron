@@ -5,6 +5,7 @@ import Services from '../views/Services.vue'
 import Portfolio from '../views/Portfolio.vue'
 import Processes from '../views/Processes.vue'
 import Contact from '../views/Contact.vue'
+import ProjectDetails from '../views/ProjectDetails.vue'
 
 const routes = [
   {
@@ -26,6 +27,12 @@ const routes = [
     path: '/Portfolio',
     name: 'Portfolio',
     component: Portfolio
+  },
+  {
+    path: '/Project/:id',
+    name: 'ProjectDetails',
+    component: ProjectDetails ,
+    props:true
   },
   {
     path: '/Processes',
