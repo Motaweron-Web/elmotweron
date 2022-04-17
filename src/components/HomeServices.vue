@@ -106,7 +106,7 @@ export default {
 <style lang="scss" scoped>
 .ServicesHome {
   background-color: #f2f3f8;
-  padding: 70px 0;
+  padding: 70px 0 150px;
 
   .info {
     h2 {
@@ -123,7 +123,7 @@ export default {
       .info {
         padding: 20px;
         border-radius: 5px;
-        box-shadow: 0px 0px 10px #0000001a;
+        box-shadow: 5px 5px 15px #d1d9e6,-5px -5px 15px #fff;
         background-color: #fff;
         position: relative;
         &::after {

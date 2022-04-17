@@ -1,7 +1,7 @@
 <template>
   <!-- banner -->
   <div class="Banner">
-    <ul >
+    <ul>
       <li>
         <button @click="backward" class="Back">
           <i class="fa-regular fa-angle-right"></i>
@@ -20,13 +20,24 @@
     </ul>
   </div>
 
-  <div v-if="Project">
-    <img :src="Project.image" />
-    <h3>{{ Project.title }}</h3>
-    <span v-for="item in Project.type" :key="item">
-      {{ item }}
-    </span>
-    <p>{{ Project.description }}</p>
+  <div v-if="Project" class="Project container">
+    <div class="row justify-content-center">
+      <div class="col-md-9 p-2">
+        <img :src="Project.image" />
+        <h2>{{ Project.title }}</h2>
+        <div class="tags">
+          <span class="tag" v-for="item in Project.type" :key="item">
+            <a
+              href="https://play.google.com/store/apps/dev?id=7401350121448606845"
+              target="_blank"
+            >
+              {{ item }}
+            </a>
+          </span>
+        </div>
+        <p>{{ Project.description }}</p>
+      </div>
+    </div>
   </div>
   <div v-else>................. loading >>>>>>>>>>></div>
 </template>
@@ -57,66 +68,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.Banner {
-  display: flex;
-  padding: 200px 30px 50px;
-  background: #f2f3f8;
-  ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    li {
-      display: flex;
-      align-items: center;
-      padding: 0px 10px;
-      padding-left: 35px;
-      position: relative;
-      .Back {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: #fff;
-        color: #000;
-        font-size: 20px;
-        border: none;
-        box-shadow: 0px 4px 12px #00000030;
-        cursor: pointer;
-        i {
-          font-size: 20px;
-        }
-      }
-      .redirect{
-          background: none;
-          color: #ed2729;
-          border: none;
-      }
-      a{
-          color: #000;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: block;
-        width: 2px;
-        border-radius: 100px;
-        height: 50%;
-        background: #999;
-        margin: 0 10px;
-        transform: skewX(-20deg) translateY(-50%);
-      }
-      &:last-child {
-        &::after {
-          display: none;
-        }
+.Project {
+  padding: 30px 0px 30px;
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .tags {
+    display: block;
+    margin-bottom: 16px;
+    .tag {
+      color: #dadde3;
+      margin: 3px;
+      display: inline-block;
+      font-size: 12px;
+      background: #ed2729;
+      border-radius: 100px;
+      padding: 3px 10px;
+      a {
+        color: #fff;
       }
     }
+  }
+  p{
+    color: #777;
   }
 }
 </style> >

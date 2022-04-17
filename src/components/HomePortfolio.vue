@@ -7,7 +7,7 @@
       <p class="coTitle mb-5">نستعرض لك بعض الاعمال التي قمنا بتنفيذها ...</p>
       <div class="row" v-if="Projects.length">
         <div
-          class="col-6 col-sm-4 col-md-3 p-1 p-md-2 wow fadeInUp"
+          class="col-6 col-sm-4 col-md-3 p-1 p-md-2 "
           v-for="Project in Projects.slice(0, 7)"
           :key="Project.id"
         >
@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 p-1 p-md-2 wow fadeInUp">
+        <div class="col-6 col-sm-4 col-md-3 p-1 p-md-2 ">
           <router-link :to="{ name: 'Portfolio' }">
             <div class="showAll">
               <h6>عرض الكل <i class="fa-duotone fa-left-long ms-2"></i></h6>
