@@ -1,0 +1,358 @@
+@font-face {
+  font-family: Almarai;
+  src: url(../webfonts/montserrat-Arabic-Regular.ttf);
+}
+
+* {
+  font-family: "Almarai";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #f8f8f8;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  outline: none;
+  border-radius: 20px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.color1 {
+  color: #ed2729;
+}
+
+.color2 {
+  color: #2dab87;
+}
+
+.goldColor {
+  color: #ffd700 !important;
+}
+
+.BG1 {
+  background-color: #ed2729;
+}
+
+.BG2 {
+  background-color: #2dab87;
+}
+
+.row {
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0px 5px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.swiper {
+  padding-bottom: 50px !important;
+}
+
+.swiper-pagination {
+  width: auto !important;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+  background-color: transparent;
+  border-radius: 100px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 0px 10px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #ed2729;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ed2729;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: unset !important;
+  bottom: 0;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #ed2729 !important;
+  color: #ffffff !important;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+}
+
+.swiper-button-next {
+  left: calc(50% - 45px) !important;
+  right: auto;
+}
+
+.swiper-button-prev {
+  right: calc(50% - 45px) !important;
+  left: auto;
+}
+
+.customBtn {
+  padding: 10px 30px;
+  border: 1px solid #ed2729;
+  border-radius: 4px;
+  color: #ed2729;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.customBtn:hover {
+  background-color: #ed2729;
+  color: #fff;
+}
+
+.title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-size: 40px !important;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.coTitle {
+  text-align: center;
+  color: #292929;
+}
+
+.Banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 200px 30px 50px;
+  background: #f2f3f8;
+}
+
+.Banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.Banner ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.Banner ul li .Back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  border: none;
+  -webkit-box-shadow: 0px 4px 12px #00000030;
+          box-shadow: 0px 4px 12px #00000030;
+  cursor: pointer;
+}
+
+.Banner ul li .Back i {
+  font-size: 20px;
+}
+
+.Banner ul li .redirect {
+  background: none;
+  color: #ed2729;
+  border: none;
+}
+
+.Banner ul li a {
+  color: #000;
+}
+
+.Banner ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 2px;
+  border-radius: 100px;
+  height: 50%;
+  background: #999;
+  margin: 0 10px;
+  -webkit-transform: skewX(-20deg) translateY(-50%);
+          transform: skewX(-20deg) translateY(-50%);
+}
+
+.Banner ul li:last-child::after {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  /* Global */
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 26px !important;
+  }
+  h3 {
+    font-size: 22px !important;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 18px !important;
+  }
+  h6 {
+    font-size: 16px !important;
+  }
+  a,
+  p {
+    font-size: 14px !important;
+  }
+}
+
+/* Tablet device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Global */
+  body {
+    font-size: 14px !important;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+  h5 {
+    font-size: 16px !important;
+  }
+  h6 {
+    font-size: 15px !important;
+  }
+  a,
+  p {
+    font-size: 14px !important;
+  }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  /* Global */
+  body {
+    font-size: 12px !important;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 17px !important;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  h5 {
+    font-size: 15px !important;
+  }
+  h6 {
+    font-size: 14px !important;
+  }
+  a,
+  p {
+    font-size: 13px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
